@@ -1,0 +1,7 @@
+FROM tomcat
+LABEL maintainer="ezhilarasanit2010@gmail.com"
+
+ADD Rabbit.war /usr/local/tomcat/webapps/
+
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
